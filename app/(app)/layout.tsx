@@ -1,0 +1,7 @@
+import { AppGate } from "@/components/layout/app-gate";
+
+export const instant = false;
+
+export default function AppLayout({ children }: { children: React.ReactNode }) {
+  return <AppGate>{children}</AppGate>;
+}
